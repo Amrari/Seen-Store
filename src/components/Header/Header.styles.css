@@ -1,0 +1,106 @@
+.seen-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    width: 1830px;
+    border-radius: 5px;
+    ;
+  }
+  .app-title{
+    flex:1;
+    text-align: left;
+    padding: 10px;
+    margin-right: 50px;
+    margin-top:-5px;
+    margin-bottom:10px;
+    font-size:60px;
+    font-family:Playwrite GB S;
+    color: #000;
+  }
+  
+  .user-profile {
+    text-align: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  } 
+  
+  .img-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    flex-grow: 2;
+
+  }
+  .nav-bar ul li {
+    margin: 0 10px; 
+  }
+  
+.login.button,
+.favorite.button,
+.stores.button,
+.offers.button {
+  text-align: right;
+    color: #ffffff;
+    background-color: #000000;
+    font-family : 'Playwrite GB S';
+    margin:0 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 48px;
+    min-width: 60px;
+    border-radius: 45px;
+  }
+  
+  .search-bar input {
+    text-align: left;
+    margin-right: 320px;
+    width: 90%;
+    padding: 18px;
+    border: 1px solid #fffdfd;
+    background-color: rgb(228, 227, 227);
+    border-radius: 80px;
+    font-size: 16px;
+
+  }
+  
+  .user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: -10px;
+  }
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .header{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
