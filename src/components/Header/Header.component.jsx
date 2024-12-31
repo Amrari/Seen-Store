@@ -1,15 +1,16 @@
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import './Header.styles.css';
-import logo from "/home/amr/projects/Frontend/Seen-Store/src/seenLogo.jpg";
+// import logo from "/home/amr/projects/Frontend/Seen-Store/src/seenLogo.jpg";
 import UserProfile from "/home/amr/projects/Frontend/Seen-Store/src/seenlogo.webp";
+import { ReactComponent as SeenLogo } from "/home/amr/projects/Frontend/Seen-Store/src/assets/SeenLogo.svg";
 
 const Header = ({placeholder, onChangeHandler, className}) => {
   const navigate = useNavigate();
   return (
     <header className="seen-header">
       <div >
-      <img className="img-logo" src={logo} alt="Seen" />
+      <SeenLogo className="Logo" />
       </div>
       <nav className="nav-bar">
       <ul>
