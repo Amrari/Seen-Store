@@ -1,3 +1,41 @@
+
+/*utility classes */
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate--infinite{
+  animation-iteration-count: 5s linear infinite;
+}
+
+.animate--daylay {
+  animation-delay: 1s;
+}
+
+.animate--faster {
+  animation-duration: 0.5s;
+}
+
+.animate--slower {
+  animation-duration: 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: linear;
+}
+
 .seen-header {
     display: flex;
     align-items: center;
@@ -32,7 +70,8 @@
   .Logo {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 50%; 
+    animation-name: rotate;
   }
 
   .nav-bar {
@@ -55,17 +94,33 @@
 .stores.button,
 .offers.button {
   text-align: right;
-    color: #ffffff;
-    background-color: #000000;
-    font-family : 'Playwrite GB S';
-    margin:0 0px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    height: 48px;
-    min-width: 60px;
-    border-radius: 45px;
+  color: var(--clr-accent);
+  background-color: var(--clr-rgba);
+  border: 5px solid var(--clr-accent);
+  font-family : 'Playwrite GB S';
+  margin:0 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  /* height: 48px; */
+  min-width: 60px;
+  border-radius: 45px;
+
+  transition: all 0.3s linear;
   }
+  .login.button:hover,
+  .favorite.button:hover,
+  .stores.button:hover,
+  .offers.button:hover {
+    transform: translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-rgba);
+  }
+  :root {
+    --clr-accent: #757575; /* Example color */
+    --clr-rgba: rgba(0, 0, 0, 0.8); /* Example color */
+  }
+
   
   .search-bar input {
     text-align: left;

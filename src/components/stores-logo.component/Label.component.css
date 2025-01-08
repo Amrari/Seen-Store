@@ -1,29 +1,70 @@
-body {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
     margin: 0;
-    padding: 0;
-    position: relative;
 }
 
 .photo-label {
-    display: flex;
+    /* border: 1px solid #000; */
+    width: 90%;
+    max-width: 1575px;
+    margin-inline: auto;
+    height:100px;
+    margin-top: 1rem;
     overflow: hidden;
-    white-space: nowrap;
     position: relative; 
-    top: 10px; 
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0); 
-    animation: scroll 30s linear infinite; 
-    animation-play-state: running; 
+    background-color: rgba(255, 255, 255, 0);
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0,1)20%,
+        rgba(0, 0, 0,1)80%,
+        rgba(0, 0, 0, 0),
+    );
+    animation-play-state: paused; 
 }
 
 .photo-label:hover {
     animation-play-state: paused; 
 }
 
-.photo-item {
+.photo-item1,
+.photo-item2,
+.photo-item3,
+.photo-item4,
+.photo-item5,
+.photo-item6,
+.photo-item7,
+.photo-item8,
+.photo-item9,
+.photo-item10 {
     width: 100px; 
     height: 100px; 
-    margin: 0 10px;
+    border-radius: 6px;
+    /* margin: 0 10px; */
+    position: absolute;
+    left: max(calc(100px * 10), 100%);
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-play-state: paused; */
+}
+
+.photo-item1:hover ,
+.photo-item2:hover ,
+.photo-item3:hover ,
+.photo-item4:hover ,
+.photo-item5:hover ,
+.photo-item6:hover ,
+.photo-item7:hover ,
+.photo-item8:hover ,
+.photo-item9:hover ,
+.photo-item10:hover {
+    animation-play-state: paused;
 }
 
 .photo-label img {
@@ -33,10 +74,48 @@ body {
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(100%);
+    to {
+        left: -100%;
     }
-    100% {
-        transform: translateX(-100%);
-    }
+}
+
+.photo-item1 {
+    animation-delay: calc(30s / 10 *(10 - 1)* -1);
+}
+
+.photo-item2 {
+    animation-delay: calc(30s / 10 *(10 - 2)* -1);
+}
+
+.photo-item3 {
+    animation-delay: calc(30s / 10 *(10 - 3)* -1);
+}
+
+.photo-item4 {
+    animation-delay: calc(30s / 10 *(10 - 4)* -1);
+}
+
+.photo-item5 {
+    animation-delay: calc(30s / 10 *(10 - 5)* -1);
+}
+
+.photo-item6 {
+    animation-delay: calc(30s / 10 *(10 - 6)* -1);
+}
+
+
+.photo-item7 {
+    animation-delay: calc(30s / 10 *(10 - 7)* -1);
+}
+
+.photo-item8 {
+    animation-delay: calc(30s / 10 *(10 - 8)* -1);
+}
+
+.photo-item9 {
+    animation-delay: calc(30s / 10 *(10 - 9)* -1);
+}
+
+.photo-item10 {
+    animation-delay: calc(30s / 10 *(10 - 10)* -1);
 }

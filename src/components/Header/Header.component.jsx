@@ -10,7 +10,7 @@ const Header = ({placeholder, onChangeHandler, className}) => {
   return (
     <header className="seen-header">
       <div >
-      <SeenLogo className="Logo" />
+      <SeenLogo className="Logo animate" />
       </div>
       <nav className="nav-bar">
       <ul>

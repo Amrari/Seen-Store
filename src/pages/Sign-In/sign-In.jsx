@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './sign-up.styles.css';
+import './sign-In.styles.css';
+import { signInWithGooglePopup,createUserDocumentFromAuth } from '/home/amr/projects/Frontend/Seen-Store/src/utils/firebase/firebase.utils.jsx';
 
-const SignUp = () => {
+
+const SignIn = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -13,6 +15,12 @@ const SignUp = () => {
   const [userType, setUserType] = useState('normal');
   const [storeLinkAddress, setStoreLinkAddress] = useState('');
   const [storeCity, setStoreCity] = useState('');
+  
+   
+  const logGoogleUser = async () => {
+      const { user } = await signInWithGooglePopup();
+       await createUserDocumentFromAuth(user);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -90,7 +98,9 @@ const SignUp = () => {
               />
             </>
           )}
-          <button className="signup-button" type="submit">Sign Up</button>
+          <button className="SignIn-button" type="submit">Sign Up</button>
+          <button className="google-button" onClick={logGoogleUser}>
+            Sign Up with Google </button>
         </form>
         <p>Already have an account? <Link to="/login">Login</Link></p>
       </div>
@@ -98,4 +108,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;

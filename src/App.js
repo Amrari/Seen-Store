@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home";
 import Login from "./pages/Login/login";
-import SignUp from "./pages/Sign-Up/sign-up";
+import SignIn from "./pages/Sign-In/sign-In";
 import StoreProfile from "./pages/Store-Profile/store-profile";
 import "./App.css";
 
@@ -40,7 +40,7 @@ const App = () => {
             }
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/SignIn" element={<SignIn />} />
           <Route path="/StoreProfile" element={<StoreProfile />} />
         </Routes>
       </div>

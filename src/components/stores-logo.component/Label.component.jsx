@@ -16,34 +16,34 @@ import photo10 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo10.p
 const Label = () => {
   return (
     <div className="photo-label" data-content="...">
-      <div className="photo-item">
+      <div className="photo-item1">
         <Link to="/StoreProfile/"><img src={photo1} alt="1" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item2">
         <Link to="/profile/2"><img src={photo2} alt="2" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item3">
         <Link to="/profile/3"><img src={photo3} alt="3" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item4">
         <Link to="/profile/4"><img src={photo4} alt="4" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item5">
         <Link to="/profile/5"><img src={photo5} alt="5" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item6">
         <Link to="/profile/6"><img src={photo6} alt="6" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item7">
         <Link to="/profile/7"><img src={photo7} alt="7" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item8">
         <Link to="/profile/8"><img src={photo8} alt="8" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item9">
         <Link to="/profile/9"><img src={photo9} alt="9" /></Link>
       </div>
-      <div className="photo-item">
+      <div className="photo-item10">
         <Link to="/profile/10"><img src={photo10} alt="10" /></Link>
       </div>
     </div>
