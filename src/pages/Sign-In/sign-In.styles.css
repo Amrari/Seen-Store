@@ -28,8 +28,8 @@
 .su-container:hover .su-bottom:after,
 .su-container:active .su-bottom:before,
 .su-container:active .su-bottom:after {
-  margin-left: 200px;
-  transform-origin: -200px 50%;
+  margin-left: 360px;
+  transform-origin: -360px 50%;
   transition-delay: 0s;
   filter: brightness(1.1);
 }
@@ -38,7 +38,7 @@
   position: absolute;
   width: 930px;
   height: 60px;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 0;

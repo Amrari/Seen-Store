@@ -17,18 +17,34 @@
     margin-top: 1rem;
     overflow: hidden;
     position: relative; 
-    background-color: rgba(255, 255, 255, 0);
-    mask-image: linear-gradient(to right,
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* mask-image: linear-gradient( */
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 100, 1) 20%,
+        rgba(0, 0, 100, 1) 80%,
+        rgba(0, 0, 0, 0)
+    );
+        /* to right,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0,1)20%,
         rgba(0, 0, 0,1)80%,
         rgba(0, 0, 0, 0),
-    );
+    ); */
     animation-play-state: paused; 
 }
 
 .photo-label:hover {
-    animation-play-state: paused; 
+    /* Resume animation on hover */
+    animation-play-state: running;
 }
 
 .photo-item1,
