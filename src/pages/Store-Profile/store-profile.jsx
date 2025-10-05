@@ -1,8 +1,8 @@
 import React from 'react';
-import photo1 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo1.png";
-import product from "/home/amr/projects/Frontend/Seen-Store/src/photos/product.png";
-import ordered from "/home/amr/projects/Frontend/Seen-Store/src/photos/ordered.png";
-import rated from "/home/amr/projects/Frontend/Seen-Store/src/photos/rated.png";
+import photo1 from "../../photos/photo1.png";
+import product from "../../photos/product.png";
+import ordered from "../../photos/ordered.png";
+import rated from "../../photos/rated.png";
 import "./store-profile.style.css";
 
 const StoreProfile = () => {

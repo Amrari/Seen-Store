@@ -2,16 +2,16 @@ import React from "react";
 import "./Label.component.css";
 import { Link } from "react-router-dom";
 
-import photo1 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo1.png";
-import photo2 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo2.png";
-import photo3 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo3.png";
-import photo4 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo4.png";
-import photo5 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo5.png";
-import photo6 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo6.png";
-import photo7 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo7.png";
-import photo8 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo8.png";
-import photo9 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo9.png";
-import photo10 from "/home/amr/projects/Frontend/Seen-Store/src/photos/photo10.png";
+import photo1 from "../../photos/photo1.png";
+import photo2 from "../../photos/photo2.png";
+import photo3 from "../../photos/photo3.png";
+import photo4 from "../../photos/photo4.png";
+import photo5 from "../../photos/photo5.png";
+import photo6 from "../../photos/photo6.png";
+import photo7 from "../../photos/photo7.png";
+import photo8 from "../../photos/photo8.png";
+import photo9 from "../../photos/photo9.png";
+import photo10 from "../../photos/photo10.png";
 
 const Label = () => {
   return (

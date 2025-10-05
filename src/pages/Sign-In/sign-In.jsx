@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './sign-In.styles.css';
-import { signInWithGooglePopup,createUserDocumentFromAuth } from '/home/amr/projects/Frontend/Seen-Store/src/utils/firebase/firebase.utils.jsx';
+import { signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils.jsx';
 
 
 const SignIn = () => {
@@ -43,9 +43,9 @@ const SignIn = () => {
           <input
             type="text"
             placeholder="Username"
-            value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
+              value={username}
           <input
             type="email"
             placeholder="Email"

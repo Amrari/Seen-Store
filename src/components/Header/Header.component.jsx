@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import './Header.styles.css';
-// import logo from "/home/amr/projects/Frontend/Seen-Store/src/seenLogo.jpg";
-import UserProfile from "/home/amr/projects/Frontend/Seen-Store/src/seenlogo.webp";
-import { ReactComponent as SeenLogo } from "/home/amr/projects/Frontend/Seen-Store/src/assets/SeenLogo.svg";
+// import logo from "../../seenLogo.jpg";
+import UserProfile from "../../seenlogo.webp";
+import { ReactComponent as SeenLogo } from "../../assets/SeenLogo.svg";
 
 const Header = ({placeholder, onChangeHandler, className}) => {
   const navigate = useNavigate();
